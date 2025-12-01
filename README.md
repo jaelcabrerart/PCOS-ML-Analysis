@@ -1,89 +1,123 @@
 # PCOS-ML-Analysis
 Este repositorio contiene un proyecto completo de análisis de datos y modelado predictivo aplicado al diagnóstico del Síndrome de Ovario Poliquístico (PCOS).
 
-El objetivo principal es evaluar diferentes técnicas de Machine Learning para identificar el modelo más adecuado para predecir esta condición clínica utilizando datos hormonales, fisiológicos y metabólicos de pacientes.
+# 🔬 Predicción de PCOS con Machine Learning  
+Análisis completo de datos clínicos, evaluación de modelos supervisados y selección del mejor algoritmo para la predicción del Síndrome de Ovario Poliquístico (PCOS).
 
-El proyecto sigue un flujo de trabajo profesional y completo, que incluye:
+Este proyecto incluye:
+- Limpieza avanzada del dataset  
+- Análisis Exploratorio de Datos (EDA)  
+- Visualización estadística  
+- Aplicación de múltiples modelos de Machine Learning  
+- Comparación mediante métricas (Accuracy, F1, AUC, ROC)  
+- Modelado matemático y justificación teórica  
+- Selección del mejor modelo: **Random Forest**
 
-🔍 1. Limpieza y preparación de datos
+---
 
-Normalización de columnas
+## 📑 Tabla de Contenidos
+1. [Descripción del Proyecto](#descripción-del-proyecto)  
+2. [Dataset](#dataset)  
+3. [Objetivos](#objetivos)  
+4. [Tecnologías Utilizadas](#tecnologías-utilizadas)  
+5. [Modelos Implementados](#modelos-implementados)  
+6. [Resultados](#resultados)  
+7. [Estructura del Repositorio](#estructura-del-repositorio)  
+8. [Instalación](#instalación)  
+9. [Uso](#uso)  
+10. [Conclusiones](#conclusiones)  
+11. [Contribuciones](#contribuciones)  
+12. [Autor](#autor)
 
-Manejo de valores nulos
+---
 
-Eliminación de variables irrelevantes
+## 🧬 Descripción del Proyecto
+Este proyecto tiene como finalidad desarrollar un análisis completo que permita predecir el diagnóstico de PCOS utilizando técnicas de Machine Learning.  
+Para ello se trabajó con un dataset clínico real que incluye variables hormonales, antropométricas y metabólicas.  
 
-Conversión y estandarización de variables numéricas
+El flujo del proyecto abarca:
 
-📊 2. Análisis Exploratorio de Datos (EDA)
+- Limpieza y preparación de datos  
+- Transformación de variables  
+- EDA con estadística descriptiva  
+- Modelado supervisado y no supervisado  
+- Evaluación por métricas diversas  
+- Fórmulas matemáticas de los modelos  
+- Conclusiones clínicas y computacionales
 
-Histogramas y boxplots
+---
 
-Medidas de tendencia central
+## 📂 Dataset
+El dataset contiene información sobre pacientes con y sin PCOS.  
+Incluye variables como:
 
-Dispersión, asimetría y curtosis
+- Edad  
+- BMI  
+- Relación cintura-cadera  
+- Hormona antimülleriana (AMH)  
+- Hábitos alimenticios  
+- Historial menstrual  
+- Marcadores metabólicos  
 
-Momentos estadísticos
+Se aplicó limpieza rigurosa: imputación, renombrado, eliminación de columnas irrelevantes y detección de outliers.
 
-Identificación de patrones clínicos relevantes
+---
 
-🤖 3. Modelado con Machine Learning
+## 🎯 Objetivos
+- Realizar un análisis estadístico detallado.
+- Probar múltiples modelos de Machine Learning.
+- Evaluar métricas clave: Accuracy, F1-Score, ROC/AUC.
+- Determinar el modelo óptimo para predecir PCOS.
+- Explicar el modelo matemáticamente.
+- Documentar todo el proceso en un reporte completo.
 
-Modelos implementados:
+---
 
-Regresión Logística
+## 🛠 Tecnologías Utilizadas
+- **Python 3**
+- **Pandas & NumPy**
+- **Matplotlib & Seaborn**
+- **Scikit-learn**
+- **Jupyter Notebook**
+- **Word / Markdown para documentación**
 
-Árbol de Decisión
+---
 
-Random Forest
+## 🤖 Modelos Implementados
 
-Support Vector Machine (SVM)
+### **Modelos Supervisados**
+- Regresión Logística  
+- Árbol de Decisión  
+- Random Forest  
+- Support Vector Machine (SVM)  
+- K-Nearest Neighbors (KNN)  
+- Naive Bayes  
 
-K-Nearest Neighbors (KNN)
+### **Modelos de Regresión**
+- Linear Regression  
+- Decision Tree Regressor  
+- Random Forest Regressor  
 
-Naive Bayes
+### **Modelos No Supervisados**
+- K-Means  
+- Análisis de Clusters (Método del codo, Silhouette Score)
 
-K-Means (clustering no supervisado)
+---
 
-🧪 4. Evaluación y comparación de modelos
+## 📊 Resultados
+Tras comparar todos los modelos mediante métricas avanzadas:
 
-Se utilizaron métricas como:
+- ✔ **Random Forest** obtuvo el mejor desempeño global:  
+  - Accuracy ≈ **92%**  
+  - Excelente manejo de relaciones no lineales  
+  - Robustez contra overfitting  
+  - Buen equilibrio entre recall y precision  
 
-Accuracy
+- La regresión logística y SVM tuvieron buen rendimiento, pero menor sensibilidad para detectar PCOS.
 
-F1-score
+- Los modelos de regresión se emplearon solo para fines comparativos y no son apropiados para este problema de clasificación.
 
-Precision y Recall
-
-AUC y curva ROC
-
-Matriz de confusión
-
-Silhouette Score (para clustering)
-
-MSE, RMSE, MAE, MAPE y R² (para modelos de regresión)
-
-🏆 5. Selección del mejor modelo
-
-Tras todas las pruebas, Random Forest fue seleccionado como el modelo óptimo por su:
-
-Alto rendimiento predictivo
-
-Robustez ante ruido y outliers
-
-Capacidad para manejar relaciones no lineales
-
-Baja tendencia al sobreajuste
-
-Estabilidad en distintas métricas
-
-📐 6. Fundamentos matemáticos
-
-El repositorio incluye una explicación detallada de:
-
-Formulación matemática del modelo
-
-Funciones de costo
+---
 
 Métodos de optimización
 
